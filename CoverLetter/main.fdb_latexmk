@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1732591950.44685 "main.tex" "main.pdf" "main" 1732591951.42533 0
+["pdflatex"] 1741117677.1667 "main.tex" "main.pdf" "main" 1741117677.91099 0
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1622837620 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
@@ -181,9 +181,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1732304103 5476123 0aaf5f0b94d004f6c94b5aad0957af23 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1732304164 3342957 7ac31d3a680a75cb73030e5bdb68e2db ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "main.aux" 1732591951.35219 322 118243b9b1e68d7a8272df54034ba9d7 "pdflatex"
-  "main.out" 1732591951.20356 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1732591948.83252 2371 301826ca5626b951c231f0879cad0f37 ""
+  "main.aux" 1741117677.8426 322 118243b9b1e68d7a8272df54034ba9d7 "pdflatex"
+  "main.out" 1741117677.69459 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1741117676.37778 1116 f997b6c0a6e51b7dd728382427e80742 ""
   (generated)
   "main.aux"
   "main.log"
