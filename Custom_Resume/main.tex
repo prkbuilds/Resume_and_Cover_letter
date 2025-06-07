@@ -1,0 +1,165 @@
+%-------------------------
+% Resume in Latex
+% Author : Pratik Fandade
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usetikzlibrary{svg.path}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.35in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\scshape\raggedright\large\bfseries}{}{0em}{}[\color{black}\titlerule]
+\pdfgentounicode=1
+
+%-------------------------
+% For Technical Skills Section
+\newcommand{\resumeItem}[1]{\item\small{#1} \vspace{-3pt}}
+% For Education Section
+\newcommand{\resumeEducation}[4]{\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\normalsize#1} & \textbf{\normalsize #2} \\
+    {\normalsize#3} & {\small #4}
+  \end{tabular*}}
+% For Experience Section
+\newcommand{\resumeSubheading}[4]{\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large#1} & \textbf{\normalsize #2} \\
+    \textbf{\normalsize#3} & {\small #4}
+  \end{tabular*}\vspace{-6pt}}
+\newcommand{\resumeSubSubheading}[2]{\item
+  \vspace{4pt}
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\normalsize #1} & {\small #2}
+  \end{tabular*}\vspace{-6pt}}
+% For Projects Section
+\newcommand{\resumeProjectHeading}[2]{\vspace{-5pt}\item
+  \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\large #1} & \textbf{\small #2}
+  \end{tabular*}
+  \vspace{-18pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-12pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  {\huge \scshape Pratik Fandade} \\ \vspace{2pt}
+  (716)-339-8155 $|$ \href{mailto:fandadep6@gmail.com}{fandadep6@gmail.com} $|$
+  \href{https://linkedin.com/in/pratikfandade}{LinkedIn} $|$
+  \href{https://github.com/prkbuilds}{GitHub} $|$
+  \href{https://pratikfandade.vercel.app/}{Portfolio} $|$
+  Buffalo, NY
+\end{center}
+
+%-----------EDUCATION-----------
+\section*{Education}
+\resumeSubHeadingListStart
+  \resumeEducation{University at Buffalo - SUNY}{Aug 2024 -- Dec 2025 (Expected)}{MS in Computer Science and Engineering}{}
+  \resumeEducation{Vishwakarma Institute of Technology, Pune}{Aug 2018 -- Aug 2022}{B.Tech in Information Technology}{}
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\vspace{-15pt}
+\section*{Technical Skills}
+\resumeItemListStart
+  \resumeItem{\textbf{Programming Language:} C, C++, C\#, Python, HTML, CSS, JavaScript, TypeScript, Go, Rust}
+  \resumeItem{\textbf{Web/Frameworks:} React.js, Node.js, Webpack, Babel, NPM, Yarn, Spring Boot}
+  \resumeItem{\textbf{Cloud/DevOps:} Amazon Web Services (AWS), GCP, Docker, Kubernetes, GitHub Actions, REST APIs, RabbitMQ}
+  \resumeItem{\textbf{Databases:} PostgreSQL, MySQL, SQL, Mongo DB, Redis}
+  \resumeItem{\textbf{Tools:} Git (Version Control), GitHub Actions, Jenkins, Linux, Cypress, Appium, Selenium, JEST, Maven, Bash}
+  \resumeItem{\textbf{Concepts:} Distributed System, Object-Oriented Programming, Functional Programming, Web Application}
+\resumeItemListEnd
+
+%-----------EXPERIENCE-----------
+\section*{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Colgate Palmolive}{Feb 2022 -- Aug 2024}{Software Engineer $|$ Full Stack Web Development}{Aug 2023 -- Aug 2024}
+  \resumeItemListStart
+    \resumeItem{Built scalable REST APIs for Application Product with .NET, MSSQL, Angular, AWS, and Docker, enabling support for 1M+ consumer requests across global platforms.}
+    \resumeItem{Redesigned cross-functional collaboration inventory modules and streamlined business logic, reducing processing time by 50\% and improving SLA compliance.}
+    \resumeItem{Collaborated in a 16-member Agile team using Jira; led feature delivery in two cross-functional sprints and mentored new developers on API standards.}
+  \resumeItemListEnd
+
+  \resumeSubSubheading{Junior Software Engineer $|$ Full Stack Web Development}{Aug 2022 -- Aug 2023}
+  \resumeItemListStart
+    \resumeItem{Refactored Responsive Design of Front-End using React, Redux, TypeScript, and MUI; improved component reusability, security and boosted performance by 70\%.}
+    \resumeItem{Resolved 100+ bug status issues via test-driven development, testing, debugging and code reviews; contributed to architectural design improvements across microservices.}
+    \resumeItem{Promoted for software architecture innovative contributions and growth in technical expertise; recognized for excellence in performance, communication skills and collaborate with team members.}
+  \resumeItemListEnd
+
+  \resumeSubSubheading{Software Engineering Intern $|$ Full Stack Web Development}{Feb 2022 -- Aug 2022}
+  \resumeItemListStart
+    \resumeItem{Developed dashboard solutions for internal global support tools; automated deployment workflows saving 50\% of repetitive query data entry time.}
+    \resumeItem{Led Continuous Integration pipeline optimization for Software Development Life Cycle using GitHub Actions and Cypress; cut build time by 60\% and increased test coverage across services.}
+    \resumeItem{Delivered 50+ PRs with clean code, detailed written documentation and test coverage; recognized among top-10 contributors company-wide for the release.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section*{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading{Stock Market Trend Prediction \href{https://www.springerprofessional.de/en/stock-market-trend-prediction-along-with-twitter-sentiment-analy/24659292}{\faExternalLink}}{Aug 2021 -- Jan 2022}
+  \resumeItemListStart
+    \resumeItem{Built LSTM model with sentiment analysis to predict stock trends with 91.9\% accuracy, resulting in a paper publication in a Conference.}
+    \resumeItem{Implemented Back-End via Flask + MongoDB + Yahoo Finance API utilizing continuous learning architecture; designed responsive frontend and enabled concurrent requests.}
+  \resumeItemListEnd
+  \resumeProjectHeading{Distributed File Storage System (RaftFS)}{Mar 2025 -- Present}
+  \resumeItemListStart
+    \resumeItem{Developed a fault-tolerant distributed storage system using Raft for consensus, enabling consistent metadata management and leader-based replication across nodes.}
+    \resumeItem{Implemented gRPC to communicate node coordination and client requests, supporting chunked file uploads, sharding, and parallel replication.}
+    \resumeItem{Designed and tested failure recovery mechanisms and node membership in a containerized Docker cluster, achieving over 99.9\% availability during simulated node crashes.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% -----------PUBLICATIONS / ACHIEVEMENTS-----------
+% \section{Activities}
+% \resumeItemListStart
+%   \resumeItem{Awarded Code Reviewer position after Programming to Collaborate and Implement on \href{https://github.com/diesel-rs/diesel}{Diesel's \raisebox{-0.1\height}\faExternalLink} database pooling solutions to enhance query speed by 15\%.}
+%   \resumeItem{Published research on \href{https://www.researchgate.net/publication/369430263_Stock_Market_Trend_Prediction_Along_with_Twitter_Sentiment_Analysis}{LSTM RNN model} and \href{https://www.ijraset.com/fileserve.php?FID=35305}{Real-Time Messaging App} leveraging Twitter data from over 500,000 tweets.}
+% \resumeItemListEnd
+
+\end{document}
+

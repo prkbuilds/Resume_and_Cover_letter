@@ -4,6 +4,7 @@
 %------------------------
 
 \documentclass[letterpaper,10pt]{article}
+\usepackage{mathptmx}
 
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -11,14 +12,15 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks=true, urlcolor=RoyalBlue]{hyperref}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{multicol}
 \usepackage{graphicx}
 \setlength{\multicolsep}{-3.0pt}
-\setlength{\columnsep}{-1pt}
+\setlength{\columnsep}{-0pt}
 \input{glyphtounicode}
+\setlist[itemize]{left=0pt, label=\textbullet, itemsep=0.5pt, topsep=0.5pt}
 
 \RequirePackage{tikz}
 \RequirePackage{xcolor}
@@ -65,16 +67,14 @@
 \addtolength{\topmargin}{-.75in}
 \addtolength{\textheight}{1.4in}
 
-\urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -83,40 +83,40 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1}
   }
 }
 
 \newcommand{\classesList}[4]{
   \item\small{
-    {#1 #2 #3 #4 \vspace{-2pt}}
+    {#1 #2 #3 #4}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{2pt}\item
+  \item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{\large#1} & \textbf{\normalsize #2} \\
-      \textbf{\normalsize#3} & \textbf{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+      \textbf{\normalsize#1} & \textbf{\small#4} \\
+      \textit{\normalsize#3} & \textit{\small#2}
+    \end{tabular*}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-  \vspace{-6pt}\item
+  \item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{\normalsize#1} & \textbf{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}
 }
 
 
 \newcommand{\resumeProjectHeading}[2]{
   \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
-    \end{tabular*}\vspace{-7pt}
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \normalsize#1 & \textbf{\small #2}
+    \end{tabular*}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -124,7 +124,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
 
 
 \newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
@@ -134,86 +134,68 @@
 \begin{document}
 %----------HEADING----------
 \begin{center}
-  {\huge \scshape Pratik Fandade} \\ {New York (Ready to Relocate)} ~
-  \raisebox{-0.1\height}\faPhone\ (716)-339-8155 ~
-  \href{mailto:pfandade@buffalo.edu}{\raisebox{-0.2\height}\faEnvelope\ \underline{pfandade@buffalo.edu}} ~ 
-  \href{https://linkedin.com/in/pratikfandade}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{LinkedIn}} ~
-  \href{https://github.com/prkbuilds}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}} ~
-  \href{https://pratikfandade.vercel.app/}{\raisebox{-0.2\height}\faGlobe\ \underline{Portfolio}}
+  {\huge \scshape Pratik Fandade} \\  ~
+  \href{tel:+1-716-339-8155}{\underline{(716) 339-8155}} $|$
+  \href{mailto:pfandade@buffalo.edu}{\underline{pfandade@buffalo.edu}} $|$
+  Buffalo, NY \\
+  \href{https://linkedin.com/in/pratikfandade}{\underline{linkedin.com/in/pratikfandade}} $|$
+  \href{https://github.com/prkbuilds}{\underline{github.com/prkbuilds}} $|$
+  \href{https://leetcode.com/u/prkbuilds/}{\underline{leetcode.com/u/prkbuilds}}
 \end{center}
-\vspace{-10pt}
 %-----------EDUCATION-----------
 \section{EDUCATION}
 \resumeSubHeadingListStart
-  \resumeSubheading {University at Buffalo - SUNY}{Aug 2024 -- Dec 2025}
-  {Master of Science in Computer Science and Engineering}{Expected Dec 2025}
-  \resumeSubheading {Vishwakarma Institute of Technology, Pune}{Aug 2018 -- Aug 2022}
-  {Bachelor of Technology in Information Technology}{GPA: 3.7}
+  \resumeSubheading {University at Buffalo, State University of New York}{Buffalo, NY}
+  {Master of Science in Computer Science and Engineering}{Expected Graduation: Dec 2025}
+  \resumeItemListStart
+    \small{\item{\textbf{Relevant Coursework:} Distributed Systems, Object-Oriented Programming, Operating System, Database Management System, Artificial Intelligence, Machine Learning, Cyber Security, Data Structures and Algorithms}}
+  \resumeSubHeadingListEnd
 \resumeSubHeadingListEnd
-\vspace{-10pt}
 %-----------PROGRAMMING SKILLS-----------
 \section{TECHNICAL SKILLS}
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-    \textbf{\normalsize{Languages:}}{ \normalsize{Python, C++, C\#, JavaScript, Java, Ruby, Go, Rust, Bash}} $|$ \textbf{\normalsize{Databases:}}{ \normalsize{PostGreSQL, MySQl, MongoDB}} \\
-    \textbf{\normalsize{Technologies/Frameworks:}}{\normalsize{ Linux, GitHub, ReactJS, NextJS, NodeJS, Flutter, Git }} \\
-    \textbf{\normalsize{Cloud:}}{ \normalsize{ AWS, GCP, DevOps, Microservices, Docker, Kubernetes, RabbitMQ, GitHub CI/CD, Distributed Systems, Distributed Applications }} \\
-    \textbf{\normalsize{Relevant Coursework:}}{\normalsize{ Data Structures and Algorithms, Operating Systems, Cyber Security, Database Management System (DBMS), Artificial Intelligence \& Machine Learning (AI/ML), Object Oriented Programming, Android Development }} \\
-  }}
-\end{itemize}
-\vspace{-15pt}
+\resumeItemListStart
+  \small{\resumeItem{\textbf{Languages:} C, C++, C\#, Python, HTML, CSS, JavaScript, TypeScript, Go, Rust}}
+  \small{\resumeItem{\textbf{Frameworks:} React.js, Node.js, Webpack, Babel, NPM, Yarn, Spring Boot}}
+  \small{\resumeItem{\textbf{Databases:} PostgreSQL, MySQL, MongoDB, Redis}}
+  \small{\resumeItem{\textbf{Cloud/DevOps:} Amazon Web Services (AWS), GCP, Docker, Kubernetes, GitHub Actions, REST APIs, RabbitMQ}}
+  \small{\resumeItem{\textbf{Tools \& Testing:} Git, Jenkins, Linux, Cypress, Appium, Selenium, Jest, Maven, Bash}}
+\resumeItemListEnd
 %-----------EXPERIENCE-----------
-\section{EXPERIENCE}
+\section{WORK EXPERIENCE}
 \resumeSubHeadingListStart
-  \resumeSubheading{Colgate Palmolive 
-  \href{https://drive.google.com/file/d/1Bn6h0GvFtkDxE25o8SCpva6-QOglHDiO/view?usp=drive_link}{\raisebox{-0.1\height}\faExternalLink}
-  }{Feb 2022 -- Aug 2024}
-  {Software Engineer}{}
+  \resumeSubheading{Redprint Inc.}{Buffalo, NY}
+  {Software Developer Intern}{Jun 2025 -- Present}
   \resumeItemListStart
-    \resumeItem{\normalsize{Collaborated with \textbf{16 developers} to build and maintain proprietary software using \textbf{Agile} methodologies, supporting global inventory planning for \textbf{10,000+ businesses}.}}
-    \resumeItem{\normalsize{Developed APIs using \textbf{Django, React, GCP, Kubernetes, RabbitMQ, Docker}, and \textbf{Celery}, supporting over \textbf{1 million concurrent I/Os} with low latency.}}
-    \resumeItem{\normalsize{Improved the design and development of software solutions for Strategic Business Logic, achieving \textbf{50\% time savings} and increased efficiency.}}
-    \resumeItem{\normalsize{Optimized front-end architecture, reducing technical overhead in a global market data planning solution by \textbf{30\%}.}}
+    \resumeItem{\normalsize{Delivered a full-featured Android productivity app by transforming wireframes into a scalable React Native product, enabling cross-platform support for Redprint's core features.}}
+    \resumeItem{\normalsize{Improved app reliability and user experience by implementing tracking and builder modes, resolving real-device bugs, and optimizing UI/UX flow using Zustand and native APIs.}}
+    \resumeItem{\normalsize{Showcased the project at UB’s CSE Demo Day after leading end-to-end development and collaborating with a 5-member team, managing late-stage debugging, testing, and version control through Git and Expo.}}
   \resumeItemListEnd
-  \resumeSubSubheading{Junior Software Engineer}{Aug 2022 -- Aug 2023}
+  \resumeSubheading{Colgate Palmolive}{Mumbai, India}
+  {Software Engineering Intern $|$ Junior Software Engineer $|$ Software Engineer}{Feb 2022 -- Aug 2024}
   \resumeItemListStart
-    \resumeItem{\normalsize{Refactored front-end \textbf{architecture} using libraries like \textbf{Ag-grid, Ant Design, React.js}, and \textbf{MUI-X}, enhancing data visualization and reducing performance overhead by \textbf{70\%}.}}
-    \resumeItem{\normalsize{Resolved over \textbf{100+ bugs and feature requests} through \textbf{test-driven development (TDD)}, improving system performance and reliability for critical business tasks.}}
-    \resumeItem{\normalsize{Led testing initiatives and implemented \textbf{Unit-tests, Integration-tests}, and enhancements with \textbf{GitHub Actions, JEST}, and \textbf{Cypress}, improving collaboration across global teams and reducing build times by \textbf{60\%}.}}
-  \resumeItemListEnd
-  \resumeSubSubheading{Software Engineering Intern}{Feb 2022 -- Aug 2022}
-  \resumeItemListStart
-    \resumeItem{\normalsize{Collaborated with \textbf{6 full-stack developers} to develop and maintain industry-grade software used in \textbf{100+ countries}.}}
-    \resumeItem{\normalsize{Authored a feature to process and validate \textbf{1000s of data points} within seconds using \textbf{validation pipelines}, saving user time by over \textbf{50\%}.}}
-    \resumeItem{\normalsize{Ranked as a \textbf{top-10 contributor} to a global software project, delivering over \textbf{50 commits} and improving overall code quality.}}
+    \resumeItem{\normalsize{Built scalable inventory systems used by \textbf{10,000+} businesses through \textbf{Agile} collaboration with a 16-member engineering team using \textbf{full-stack} tools.}}
+    \resumeItem{\normalsize{Achieved low-latency performance while processing over \textbf{100 million records} by optimizing \textbf{RESTful APIs} and background tasks using \textbf{Django, React, GCP, Kubernetes, RabbitMQ, Celery,} and \textbf{Docker}.}}
+    \resumeItem{\normalsize{Accelerated deployment cycles by \textbf{60\%} by leading the development of automated \textbf{CI/CD} pipelines using \textbf{GitHub Actions, Cypress}, and \textbf{Jest}.}}
+    \resumeItem{\normalsize{Reduced UI rendering overhead by \textbf{70\%} through a complete frontend architecture refactor using \textbf{React, Redux, MUI-X, Ant Design,} and \textbf{Ag-grid}.}}
+    \resumeItem{\normalsize{Improved system reliability by resolving \textbf{100+ bugs} and feature requests via \textbf{Test-driven development (TDD)}, directly impacting global operations.}}
+    \resumeItem{\normalsize{Developed and shipped core features for software used across \textbf{100+} countries as part of a 6-person full-stack team.}}
+    \resumeItem{\normalsize{Accelerated data validation by over \textbf{50\%} through the creation of a high-speed processing pipeline handling thousands of records per second.}}
   \resumeItemListEnd
 \resumeSubHeadingListEnd
-\vspace{-12pt}
 %-----------PROJECTS-----------
 \section{PROJECTS}
 \resumeSubHeadingListStart   
-  \resumeProjectHeading {\href{https://www.springerprofessional.de/en/stock-market-trend-prediction-along-with-twitter-sentiment-analy/24659292}{\textbf{\large{Stock Market Trend Prediction}} \href{https://www.springerprofessional.de/en/stock-market-trend-prediction-along-with-twitter-sentiment-analy/24659292}{\raisebox{-0.1\height}\faExternalLink }} $|$ \textit{\normalsize{RNN, TensorFlow, Keras, Python}}}{Aug 2021 - Jan 2022}
+  \resumeProjectHeading {\href{https://github.com/prkbuilds/redis-go}{\textbf{Redis-inspired in-memory database} \href{https://github.com/prkbuilds/redis-go}{\raisebox{-0.1\height}\faExternalLink }} $|$ \textit{Go, Docker, RESP}}{}
   \resumeItemListStart
-    \resumeItem{\normalsize{Designed and developed a model using the \textbf{LSTM RNN} algorithm for stock price prediction, achieving an accuracy of 91.96\% by incorporating Twitter sentiment analysis to assess
-public opinion on stock movements.}}
-    \resumeItem{\normalsize{Integrated live data feed from Yahoo Finance API into the deployed model, achieving a notable improvement in prediction speed by 10 seconds per transaction and ensuring continuous updates to training datasets.}}
-  \resumeItemListEnd
-  \vspace{-12pt}
-  \resumeProjectHeading {\href{https://github.com/prkbuilds/redis-go}{\textbf{\large{Redis-inspired in-memory database}} \href{https://github.com/prkbuilds/redis-go}{\raisebox{-0.1\height}\faExternalLink }} $|$ \textit{\normalsize{Go, Docker, RESP}}}{Aug 2020 - Jan 2021}
-  \resumeItemListStart
-    \resumeItem{\normalsize{Designed and Created a Redis-inspired \textbf{in-memory database} server in \textbf{Go}, supporting key-value operations, replication, and persistence.}}
-    \resumeItem{\normalsize{Constructed master-replica synchronization using `REPLCONF' and `PSYNC', guaranteeing fault tolerance and real-time data consistency for 99.99\% uptime, a key project requirement.}}
-    \resumeItem{\normalsize{Implemented \textbf{Thread-safe mechanisms} within the RESP protocol parser, ensuring zero data corruption during concurrent client requests, increasing overall system reliability for the in-memory database.}}
+    \resumeItem{\normalsize{Engineered a Redis-inspired in-memory database in Go, which became the foundational element for a high-performance caching layer, leading to a 30\% reduction in average application response time.}}
+    \resumeItem{\normalsize{Implemented \textbf{thread-safe mechanisms} within the RESP protocol parser, ensuring zero data corruption during concurrent client requests, increasing overall system reliability for the in-memory database.}}
   \resumeItemListEnd
 \resumeSubHeadingListEnd
-\vspace{-12pt}
 %--------PUBLICATIONS/ACHIEVEMENTS--------
 \section{PUBLICATIONS/ACHIEVEMENTS}
 \resumeItemListStart
-\resumeItem{\normalsize{Optimized \href{https://github.com/diesel-rs/diesel}{\textit{Diesel's \raisebox{-0.1\height}\faExternalLink}}} database connection pooling, leading to a 15\% improvement in query response times and contributing to enhanced application stability for over 10,000 active installations.}
-  \vspace{-4pt}
-  \resumeItem{\normalsize{Published research papers detailing the creation of an \href{https://www.researchgate.net/publication/369430263_Stock_Market_Trend_Prediction_Along_with_Twitter_Sentiment_Analysis}{\textbf{LSTM RNN model \raisebox{-0.1\height}\faExternalLink}} and \href{https://www.ijraset.com/fileserve.php?FID=35305}{\textbf{Scalable Real-Time Messaging app \raisebox{-0.1\height}\faExternalLink}} platform combined with real-time Twitter sentiment analysis.}}
-  \vspace{-4pt}
+  \resumeItem{\normalsize{Guided performance and code quality improvements by serving as a \textbf{Code Reviewer} on the open-source \href{https://github.com/diesel-rs/diesel}{\underline{\textbf{Diesel ORM Builder in Rust}}}, focusing on database connection pooling and compile-time query generation.}}
+  \resumeItem{\normalsize{Published research on \href{https://www.springerprofessional.de/en/stock-market-trend-prediction-along-with-twitter-sentiment-analy/24659292}{\underline{\textbf{LSTM-based Stock Prediction}}} by integrating time-series modeling with Twitter sentiment analysis.}}
 \resumeItemListEnd
 
 \end{document}
