@@ -153,7 +153,7 @@
 \resumeSubHeadingListStart
   \resumeSubheading{Redprint}{New York, US}{Software Engineer}{Jun 2025 -- Present}
   \resumeItemListStart
-    \resumeItem{Improved API reliability by reducing error rate from 1.2\% to \textbf{0.2\%} by adding \textbf{OpenTelemetry} tracing + structured logging, request tracing/correlation IDs, and SLO-based alerting (latency/error rate/saturation) on critical endpoints.}
+    \resumeItem{Improved API reliability by reducing error rate from 1.2\% to \textbf{0.2\%} by adding \textbf{OpenTelemetry} tracing and structured logging, request tracing/correlation IDs, and SLO-based alerting (latency/error rate/saturation) on critical endpoints.}
     \resumeItem{Cut \textbf{MTTR} from 75 min to 20 min by building \textbf{Grafana} dashboards latency, queue depth, worker failures, DB health) and writing runbooks for top incident patterns.}
     \resumeItem{Reduced bulk-write time from 45s to \textbf{3s} by converting row-by-row updates to \textbf{set-based Postgres} operations, batching, and transaction scoping to minimize lock contention}
     \resumeItem{Scaled from 3k to \textbf{15k DAU} by tuning autoscaling, right-sizing compute, and caching hot reads; maintained stable tail latency during peak traffic.}
@@ -162,7 +162,7 @@
   \resumeSubheading{Colgate Palmolive}{Mumbai, India}{Software Engineer}{Feb 2022 -- Aug 2024}
   \resumeItemListStart
     \resumeItem{Shipped a bulk-edit engine that updated \textbf{100,000+ rows} in \textasciitilde1s (previously 30s) by using \textbf{set-based postgres updates}, batching, and async recomputation with \textbf{RabbitMQ} workers on \textbf{Kubernetes}.}
-    \resumeItem{Improved async throughput \textbf{3x} and reduced peak backlog \textbf{78\%} by splitting hot/cold queues, tuning worker concurrency/prefetch, and implementing retries + DLQ with idempotent handlers.}
+    \resumeItem{Improved async throughput \textbf{3x} and reduced peak backlog \textbf{78\%} by splitting hot/cold queues, tuning worker concurrency/prefetch, and implementing retries and DLQ with idempotent handlers.}
     \resumeItem{Reduced p95 API latency from \textbf{\textasciitilde800ms to \textasciitilde150ms} by adding indexes, rewriting expensive queries, and moving recomputation off the request path into async jobs.}
     \resumeItem{Increased peak worker scalability from \textbf{\textasciitilde30 to \textasciitilde100} concurrent workers during planning windows by tuning kubernetes autoscaling and right-sizing cpu/memory requests/limits.}
   \resumeItemListEnd
@@ -173,16 +173,16 @@
 \resumeSubHeadingListStart
   \resumeProjectHeading{\textbf{TacoDB} $|$ \textit{C++, SQL, Storage Engine, Buffer Manager}}{}
   \resumeItemListStart
-    \resumeItem{Built a lightweight relational database with a disk-backed storage engine, buffer pool, and write-ahead logging to ensure durability and crash recovery.}
-    \resumeItem{Implemented concurrency + correctness primitives (locking/latches, transactions) and optimized I/O paths via page caching, eviction policy tuning, and structured performance profiling.}
-    \resumeItem{Designed query execution + planning with a cost-based optimizer and operators (scan/join/aggregate), focusing on predictable latency under large datasets.}
+    \resumeItem{Built a lightweight relational database similar to \textbf{CassandraDB} with a disk-backed storage engine, buffer pool, and write-ahead logging to ensure durability and crash recovery.}
+    \resumeItem{Implemented concurrency and correctness primitives (locking/latches, transactions) and optimized I/O paths via page caching, \textbf{eviction policy tuning}, and structured performance profiling.}
+    \resumeItem{Designed query execution and planning with a \textbf{cost-based optimizer} and operators (scan/join/aggregate), focusing on predictable latency under large datasets.}
   \resumeItemListEnd
   \vspace{0.5em}
   \resumeProjectHeading{\textbf{Distributed Raft-based Redis} $|$ \textit{Go, gRPC, Raft, Docker}}{}
   \resumeItemListStart
-  \resumeItem{Engineered a fault-tolerant, replicated KV store using Raft (leader election, log replication, snapshots) to provide consistency and automated failover under node loss.}
+  \resumeItem{Engineered a fault-tolerant, replicated \textbf{Key-Value store using Raft} (leader election, log replication, snapshots) to provide consistency and automated failover under node loss.}
   \resumeItem{Hardened the system for production-like conditions by adding idempotent request handling, timeouts/retries, backpressure, and metrics for p95 latency, replication lag, and leader churn.}
-  \resumeItem{Containerized and orchestrated multi-node clusters with Docker for repeatable deployments; built failure-injection tests (partition/kill/restart) to validate recovery guarantees.}
+  \resumeItem{Containerized and orchestrated multi-node clusters with \textbf{Docker} for repeatable deployments; built failure-injection tests (partition/kill/restart) to validate recovery guarantees.}
   \resumeItemListEnd
 \resumeSubHeadingListEnd
 %-----------EDUCATION-----------
