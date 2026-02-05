@@ -3,7 +3,7 @@
 % Author : Pratik Fandade
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -139,16 +139,16 @@
 \end{center}
 \vspace{-6pt}
 %-------PROGRAMMING SKILLS-------
-\vspace{-10pt}
+\vspace{-12pt}
 \section{SKILLS}
 \resumeItemListStart
-  \resumeItem{\textbf{Programming:} C, C++ (STL), Python, Rust, Go | \textbf{Data \& Storage:} PostgreSQL, MongoDB, Redis, SQL, BigQuery}
-  \resumeItem{\textbf{Cloud \& DevOps:} AWS, GCP, Docker, CI/CD, Gardener, RabbitMQ, Kubernetes, Terraform}
-  \resumeItem{\textbf{Backend \& Systems:} Distributed Systems, REST APIs, gRPC, cron-jobs, Caching, Threading, Synchronization}
-  \resumeItem{\textbf{Reliability \& Quality:} OpenTelemetry, Grafana, Logging, Metrics, Monitoring}
+  \resumeItem{\textbf{Programming:} C, C++, Python, Rust, Go, Bash | \textbf{Data \& Storage:} PostgreSQL, Redis, SQL, BigQuery}
+  \resumeItem{\textbf{Cloud \& DevOps:} AWS, GCP, Docker, CI/CD, RabbitMQ, Kafka, Flink, Kubernetes (Gardener), Terraform}
+  \resumeItem{\textbf{Backend \& Systems:} Distributed Systems, REST, gRPC, Async Jobs, Caching, Concurrency(Threads/Synchronization)}
+  \resumeItem{\textbf{Reliability \& Quality:} OpenTelemetry, Grafana, WatchDog, Prometheus, Logging, Metrics, Monitoring}
 \resumeItemListEnd
 %-----------EXPERIENCE-----------
-\vspace{-6pt}
+\vspace{-12pt}
 \section{EXPERIENCE}
 \resumeSubHeadingListStart
   \resumeSubheading{Redprint}{New York, US}{Software Engineer}{Jun 2025 -- Present}
@@ -168,16 +168,15 @@
   \resumeItemListEnd
 \resumeSubHeadingListEnd
 %-----------PROJECTS-----------
-\vspace{-10pt}
+\vspace{-12pt}
 \section{PROJECTS}
 \resumeSubHeadingListStart
   \resumeProjectHeading{\textbf{TacoDB} $|$ \textit{C++, SQL, Storage Engine, Buffer Manager}}{}
   \resumeItemListStart
     \resumeItem{Built a lightweight relational database with a disk-backed storage engine, buffer pool, and write-ahead logging to ensure durability and crash recovery.}
-    \resumeItem{Implemented concurrency + correctness primitives (locking/latches, transactions) and optimized I/O paths via page caching, eviction policy tuning, and structured performance profiling.}
-    \resumeItem{Designed query execution + planning with a cost-based optimizer and operators (scan/join/aggregate), focusing on predictable latency under large datasets.}
+    \resumeItem{Implemented concurrency and correctness primitives (locking/latches, transactions) and optimized I/O paths via page caching, eviction policy tuning, and structured performance profiling.}
+    \resumeItem{Designed query execution and planning with a cost-based optimizer and operators (scan/join/aggregate), focusing on predictable latency under large datasets.}
   \resumeItemListEnd
-  \vspace{0.5em}
   \resumeProjectHeading{\textbf{Distributed Raft-based Redis} $|$ \textit{Go, gRPC, Raft, Docker}}{}
   \resumeItemListStart
   \resumeItem{Engineered a fault-tolerant, replicated KV store using Raft (leader election, log replication, snapshots) to provide consistency and automated failover under node loss.}
@@ -186,23 +185,21 @@
   \resumeItemListEnd
 \resumeSubHeadingListEnd
 %-----------EDUCATION-----------
-\vspace{-10pt}
+\vspace{-12pt}
 \section{EDUCATION}
 \resumeSubHeadingListStart
   \resumeSubheading{\textbf{University at Buffalo, State University of New York (SUNY)}}{Buffalo, NY}
   {Master of Science in Computer Science and Engineering}{Aug 2024 -- Dec 2025}
-
   \resumeSubheading{\textbf{Vishwakarma Institute of Technology, Pune}}{Pune, Maharashtra}
   {Bachelor of Technology in Information Technology}{Aug 2018 -- Aug 2022}
 \resumeSubHeadingListEnd
 %--------PUBLICATIONS/ACHIEVEMENTS--------
-% \vspace{-10pt}
-% \section{OPEN SOURCE, PUBLICATIONS \& CERTIFICATIONS}
-% \resumeItemListStart
-%   \resumeItem{Improved Diesel ORM query performance by optimizing connection pooling, contributing to an \textbf{Open-Source library (Rust)} as a contributor and reviewer.}
-%   \resumeItem{Published research achieving 90\% stock trend prediction accuracy as measured by test datasets by combining time-series modeling and sentiment analysis.}
-%   \resumeItem{Increased crypto platform reliability by 35\% as measured by uptime logs by optimizing Rust backend, RabbitMQ messaging, and PostgreSQL}
-%   \resumeItem{Completed 10+ \textbf{Google Cloud Qwiklabs} as measured by earned credentials, covering GKE, Docker, Terraform, BigQuery, and CI/CD.}
-% \resumeItemListEnd
+\vspace{-12pt}
+\section{OPEN SOURCE, PUBLICATIONS \& CERTIFICATIONS}
+\resumeItemListStart
+  \resumeItem{Improved Diesel ORM query performance by optimizing connection pooling, contributing to an \textbf{Open-Source library (Rust)} as a contributor and reviewer.}
+  \resumeItem{Published research achieving 90\% stock trend prediction accuracy as measured by test datasets by combining time-series modeling and sentiment analysis.}
+  \resumeItem{Completed 10+ \textbf{Google Cloud Qwiklabs} covering GKE, Docker, Terraform, BigQuery, and CI/CD.}
+\resumeItemListEnd
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.22)  4 FEB 2026 01:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.22)  4 FEB 2026 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
-(/usr/local/texlive/2024/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count196
 \c@section=\count197
@@ -627,9 +627,9 @@ LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 1
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 134.
+(Font)              <9> on input line 134.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 134.
+(Font)              <6> on input line 134.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 134.
 
@@ -647,11 +647,9 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 14
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 174.
+(Font)              <10> on input line 174.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 174.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 174.
+(Font)              <7> on input line 174.
 
 
 [1
@@ -666,21 +664,21 @@ L3 programming layer <2024-11-02>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 594174F468DD2C45EBEAFFB538FDFAB8;337.
+(rerunfilecheck)             Checksum: E110CFCBC983ED42023373D60EF3ECD0;605.
  ) 
 Here is how much of TeX's memory you used:
  23605 strings out of 473362
- 436821 string characters out of 5720983
- 833803 words of memory out of 5000000
- 46311 multiletter control sequences out of 15000+600000
- 610394 words of font info for 67 fonts, out of 8000000 for 9000
+ 436752 string characters out of 5720983
+ 836777 words of memory out of 5000000
+ 46307 multiletter control sequences out of 15000+600000
+ 606501 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,7n,93p,408b,452s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on main.pdf (1 page, 124142 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy9.pfb>
+Output written on main.pdf (1 page, 173945 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 45 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 89 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
